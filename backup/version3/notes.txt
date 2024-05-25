@@ -1,0 +1,4 @@
+NN: 64, 32
+shouldexplore: 200, 10000
+input: added next 3 minos
+Reward: -0.51 * height + 0.76 * lines - 0.36 * holes - 0.18 * bumpiness + 2 * game.getScoreThisTurn();

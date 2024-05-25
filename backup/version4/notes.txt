@@ -1,0 +1,19 @@
+NN: 64, 32
+shouldexplore: 500, 10000
+
+input: 
+- height of each column
+- closest hole from top
+- number of hole following it
+- next 3 minos
+- number of lines cleared
+- total holes
+- tetris, tspin
+
+explore function: chooses to explore with more line clears and tspin
+
+Reward: -0.51 * height - 0.36 * holes - 0.18 * bumpiness + 7 * game.getScoreThisTurn();
+
+
+command:
+java -cp "./lib/*;." edu.bu.tetris.Main -q src.pas.tetris.agents.TetrisQAgent -p 10000 -t 400 -v 200 -b 10000 -n 0.001 -g 0.99 -c 10000000 -u 5 -s | tee run.log 

@@ -1,0 +1,3 @@
+input function: isaac
+softmax: reversed
+NN: 64, 64

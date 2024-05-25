@@ -1,0 +1,8 @@
+NN: 64, 32
+softmax: no reverse
+shouldexplore: 16, 30000
+input: isaac
+temp: 1
+
+
+command: java -cp "./lib/*;." edu.bu.tetris.Main -q src.pas.tetris.agents.TetrisQAgent -p 50000 -t 100 -v 50 -b 5000 -n 0.01 -g 0.99 -c 10000000 -u 5 -s | tee run.log
